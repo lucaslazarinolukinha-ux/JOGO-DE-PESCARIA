@@ -1,8 +1,0 @@
-services:
-  - type: web
-    name: pescaria-online
-    runtime: docker
-    plan: free
-    region: oregon
-    dockerfilePath: ./Dockerfile
-    healthCheckPath: /
