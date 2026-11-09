@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY src/ ./src/
 COPY web/ ./web/
-COPY dados/ ./dados/
+RUN mkdir -p /app/dados
 
 RUN mkdir -p out && javac --add-modules jdk.httpserver -encoding UTF-8 -d out $(find src -name "*.java")
 
